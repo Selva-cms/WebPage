@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+
+</head>
+<body>
+    <div class="container">
+        <form action="http://google.com">
+            <h1>Sign Up</h1>
+            <label for="firstname">Firstname: </label>
+            <input type="text" name="firstname" id="fname" placeholder="Enter your firstname" required><br><br>
+
+            <label for="lastname">Lastname:</label>
+            <input type="text" name="lastname" id="lname" placeholder="Enter your lastname" required><br><br>
+
+            <label for="mail">Email:</label>
+            <input type="text" name="email" id="mailid" placeholder="working mailid for notification" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter password" required><br><br>
+
+            <label for="phone">Mobile:</label>
+            <input type="text" name="phone" id="mobile" placeholder="working mobile number for instant notification" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" placeholder="Enter your age" required><br><br>
+
+            <label for="lang">Prefered Language</label>
+            <select name="lang" id="Language" required>
+                <option value="tamil">Tamil</option>
+                <option value="english">English</option>
+                <option value="malayalam">Malayalam</option>
+                <option value="telungu">Telungu</option>
+            </select>
+            <br>
+            <br>
+            <div class="signup-details">
+                <input type="submit" value="Submit" class="bg-primary" id="submit"><br>
+
+            </div>
+
+            
+            <center>
+                <label for="login">Already having account</label>
+                <a href="login.html">Login</a>
+            </center>
+
+        </form>
+    </div>
+    <script>
+       $('#submit').on('click', function() {
+    valid = true;   
+
+    if (valid && $('#fname').val() == '') {
+        alert ("please enter your name");
+        valid = false;
+    }
+
+    if (valid && $('#lname').val() == '') {
+        alert ("please enter your lastname");
+         valid = false;
+    }    
+
+    if (valid && $('#mailid').val() == '') {
+        alert ("please enter your email Id");
+         valid = false;
+    } 
+
+    if (valid && $('#password').val() == '') {
+        alert ("please enter your password");
+         valid = false;
+    } 
+    if (valid && $('#mobile').val() == '') {
+        alert ("please enter your mobile number");
+         valid = false;
+    } 
+    if (valid && $('#age').val() == '') {
+        alert ("please enter your age now");
+         valid = false;
+    } 
+
+
+    return valid;
+});
+    </script>
+</body>
+</html>

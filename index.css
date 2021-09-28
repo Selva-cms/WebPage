@@ -1,0 +1,357 @@
+/* body part */
+body{
+    background-image: url("bg_image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Banner part */
+.banner{
+    background-image: url("poster.jpg");
+    height: 700px;
+    filter: brightness(55%);
+    background-attachment: fixed;
+}
+
+    /* Navigation part */
+
+
+.nav ul {
+    list-style-type: none;
+    margin-top : 20px;
+    margin-left : 650px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 3%;
+    position: absolute;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+    color: white;
+  }
+  
+  .active {
+    background-color: red;
+  }
+
+  /* News part */
+.news{
+    background-image: url("bg.jpg");
+    height:auto;
+    box-shadow:red; 
+    margin: 0;
+}
+.news_heading{
+    color: white;
+    padding-top: 3%;
+    font-size: 30px;
+}
+
+/* Shows part */
+
+.shows{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    box-shadow:red; 
+    margin: 0;
+}
+.shows_heading{
+    color: red;
+    padding-top: 3%;
+    font-size: 30px;
+}
+
+/* Cooming soon part */
+
+.soon{
+    background-image: url("bg.jpg");
+    height: auto;
+    box-shadow:red; 
+    margin: 0;
+}
+.commingsoon_heading{
+    color: rgb(255, 255, 255);
+    padding-top: 3%;
+    font-size: 30px;
+}
+
+ /* Contact part */
+ .contact{
+    background-color: rgb(255, 255, 255);
+    height: 900px;
+    box-shadow:red; 
+    margin: 0;
+}
+.contact_heading{
+    color: red;
+    padding-top: 3%;
+    font-size: 30px;
+}
+
+/* cards in news part */
+
+.card{
+    padding-top: 10px;
+}
+.row {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+
+
+/* Slideshow */
+.slideshow-container {
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 3%;
+}
+
+/*  dots */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 7s;
+  animation-name: fade;
+  animation-duration: 7s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* contact part */
+
+.contact_form input[type=text] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.contact_form input[type=submit] {
+  width: 10%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  color: white;
+  border-radius: 5%;
+}
+label{
+  color: black;
+}
+
+.contact_form{
+  padding-top: 10%;
+}
+
+
+/* show part slide show */
+
+
+/* Slideshow */
+.slideshow-container1 {
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 3%;
+}
+
+/*  dots */
+.dot1 {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 7s;
+  animation-name: fade;
+  animation-duration: 7s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* cards in show part */
+
+.cards_show{
+  padding-top: 10px;
+}
+.row1 {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+/* cards for comming soon part */
+
+/* cards in news part */
+
+.cards_soon{
+  padding-top: 10px;
+}
+.row2 {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* footer */
+
+.footer{
+  background-image: url("footer.jpg");
+  height:200px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.privacy h5{
+  color: rgb(223, 215, 215);
+  font-size: 14px;
+  text-align: center;
+}
+.privacy h6{
+  color: rgb(163, 160, 160);
+  font-size: 11px;
+  text-align: center;
+}
+.privacy{
+  padding-top: 5%;
+
+}
+
+/* goto top button*/
+.footer #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.footer #myBtn:hover {
+  background-color: #555;
+}
